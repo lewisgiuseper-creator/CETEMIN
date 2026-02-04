@@ -1,0 +1,69 @@
+<div class="row-layout main-navigation">
+  <igx-navbar class="navbar">
+    <igx-navbar-title class="navbar-content">
+      <div [routerLink]="[`/motor`]" class="row-layout group">
+        <img src="/assets/logo2.svg" alt="" class="image" />
+        <p class="ig-typography__subtitle-2 text">
+          CETEMIN MONITOREO
+        </p>
+      </div>
+    </igx-navbar-title>
+    <div class="row-layout group_1">
+      <div class="row-layout group">
+        <p class="ig-typography__subtitle-2 text">
+          CARAGADOR FRONTAL 966H
+        </p>
+      </div>
+      <button igxIconButton="flat" [igxToggleAction]="navDrawer" class="icon-button">
+        <igx-icon class="icon">
+          menu
+        </igx-icon>
+      </button>
+    </div>
+  </igx-navbar>
+</div>
+<div class="row-layout bottom-container">
+  <div class="view-container">
+    <router-outlet></router-outlet>
+  </div>
+  <igx-nav-drawer position="right" [pinThreshold]="stringToNumber('0')" width="236px" #navDrawer class="nav-drawer">
+    <ng-template igxDrawer>
+      <div igxDrawerItem [routerLink]="[`/motor`]" [active]="isActive(`/motor`)">
+        <igx-icon class="icon_1">
+          home
+        </igx-icon>
+        <span>Home</span>
+      </div>
+      <div igxDrawerItem>
+        <igx-icon class="icon_1">
+          healing
+        </igx-icon>
+        <span>Medications</span>
+      </div>
+      <div igxDrawerItem [routerLink]="[`/ig-view`]" [active]="isActive(`/ig-view`)">
+        <igx-icon class="icon_1">
+          favorite
+        </igx-icon>
+        <span>Health Indicators</span>
+      </div>
+      <div igxDrawerItem>
+        <igx-icon class="icon_1">
+          calendar_today
+        </igx-icon>
+        <span>Appointments</span>
+      </div>
+      <div igxDrawerItem>
+        <igx-icon class="icon_1">
+          account_circle
+        </igx-icon>
+        <span>Medical Profile</span>
+      </div>
+      <div igxDrawerItem>
+        <igx-icon class="icon_1">
+          error
+        </igx-icon>
+        <span>Emergency</span>
+      </div>
+    </ng-template>
+  </igx-nav-drawer>
+</div>

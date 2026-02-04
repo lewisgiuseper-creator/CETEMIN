@@ -1,0 +1,157 @@
+<div class="column-layout group">
+  <h4 class="content_1">
+    MOTOR
+  </h4>
+  <div class="row-layout group_1">
+    <div [routerLink]="[`/ig-view`]" class="column-layout group_2">
+      <img src="/assets/BPressure-White.svg" alt="" class="image" />
+      <p class="ig-typography__subtitle-2 content">
+        HORAS DE TRABAJO
+      </p>
+      <div class="row-layout group_3">
+        <div class="row-layout group_4">
+          <h4 class="content">
+            200
+          </h4>
+          <h6 class="content">
+            H
+          </h6>
+        </div>
+      </div>
+    </div>
+    <div [routerLink]="[`/ig-view`]" class="column-layout group_5">
+      <img src="/assets/I.png" alt="" class="image_1" />
+      <p class="ig-typography__subtitle-2 content">
+        RPM
+      </p>
+      <div class="row-layout group_3">
+        <div class="row-layout group_4">
+          <h4 class="content">
+            1000
+          </h4>
+          <h4 class="content">
+            /
+          </h4>
+          <h6 class="content">
+            RPM
+          </h6>
+        </div>
+      </div>
+    </div>
+    <div [routerLink]="[`/ig-view`]" class="column-layout group_6">
+      <img src="/assets/I%20%281%29.png" alt="" class="image_2" />
+      <p class="ig-typography__subtitle-2 content">
+        PRESIÓN DE ACEITE
+      </p>
+      <div class="row-layout group_3">
+        <div class="row-layout group_4">
+          <h4 class="content">
+            50
+          </h4>
+          <h6 class="content">
+            PSI
+          </h6>
+        </div>
+      </div>
+    </div>
+    <div [routerLink]="[`/ig-view`]" class="column-layout group_7">
+      <img src="/assets/I%20%282%29.png" alt="" class="image_3" />
+      <p class="ig-typography__subtitle-2 content">
+        TEMPERATURA
+      </p>
+      <div class="row-layout group_3">
+        <div class="row-layout group_4">
+          <h4 class="content">
+            100
+          </h4>
+          <h6 class="content">
+            °C
+          </h6>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row-layout group_8">
+    <div class="column-layout group_9">
+      <div class="row-layout group_10">
+        <div class="row-layout group_4">
+          <p class="ig-typography__subtitle-2 text">
+            MANTENIMIENTO REALIZADO
+          </p>
+        </div>
+        <div class="row-layout group_11">
+          <a class="ig-typography__body-2 hyperlink">
+            ver
+          </a>
+          <igx-icon class="icon">
+            arrow_forward
+          </igx-icon>
+        </div>
+      </div>
+      <igx-list class="list">
+        <igx-list-item [selected]="this.listSelectedItem != null && this.listSelectedItem === '0'" (click)="listSelectedItem = '0'">
+          <span igxListLine>
+            <div class="row-layout group_12">
+              <div class="row-layout group_13">
+                <img src="/assets/Med2.svg" alt="" class="image_4" />
+                <div class="column-layout group_14">
+                  <p class="ig-typography__subtitle-2 text_1">
+                    04/02/2026
+                  </p>
+                  <p class="ig-typography__caption text_1">
+                    Mantenimiento preventivo
+                  </p>
+                </div>
+              </div>
+              <button igxIconButton="flat" class="icon-button">
+                <igx-icon class="icon_1">
+                  keyboard_arrow_right
+                </igx-icon>
+              </button>
+            </div>
+          </span>
+        </igx-list-item>
+      </igx-list>
+    </div>
+    <div class="column-layout group_9">
+      <div class="row-layout group_10">
+        <div class="row-layout group_4">
+          <p class="ig-typography__subtitle-2 text">
+            PROXIMOS MANTENIMIENTOS
+          </p>
+        </div>
+        <div class="row-layout group_11">
+          <a class="ig-typography__body-2 hyperlink">
+            View all
+          </a>
+          <igx-icon class="icon">
+            arrow_forward
+          </igx-icon>
+        </div>
+      </div>
+      <igx-list class="list">
+        <igx-list-item [selected]="this.listSelectedItem1 != null && this.listSelectedItem1 === '0'" (click)="listSelectedItem1 = '0'">
+          <span igxListLine>
+            <div class="row-layout group_12">
+              <div class="row-layout group_13">
+                <img src="/assets/BPressure_Color.svg" alt="" class="image_5" />
+                <div class="column-layout group_15">
+                  <p class="ig-typography__subtitle-2 content_1">
+                    500 H
+                  </p>
+                </div>
+              </div>
+              <button igxIconButton="flat" class="icon-button">
+                <igx-icon class="icon_1">
+                  keyboard_arrow_right
+                </igx-icon>
+              </button>
+            </div>
+          </span>
+        </igx-list-item>
+        <igx-list-item [selected]="this.listSelectedItem1 != null && this.listSelectedItem1 === '1'" (click)="listSelectedItem1 = '1'"></igx-list-item>
+        <igx-list-item [selected]="this.listSelectedItem1 != null && this.listSelectedItem1 === '2'" (click)="listSelectedItem1 = '2'"></igx-list-item>
+      </igx-list>
+    </div>
+  </div>
+</div>
